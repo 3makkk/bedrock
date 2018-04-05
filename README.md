@@ -58,12 +58,6 @@ See a complete working example in the [roots-example-project.com repo](https://g
 
 5. Access WP admin at `http://example.com/wp/wp-admin`
 
-## Deploys
-
-There are two methods to deploy Bedrock sites out of the box:
-
-* [Trellis](https://github.com/roots/trellis)
-* [bedrock-capistrano](https://github.com/roots/bedrock-capistrano)
 
 Any other deployment method can be used as well with one requirement:
 
