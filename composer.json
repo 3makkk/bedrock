@@ -1,5 +1,5 @@
 {
-  "name": "roots/bedrock",
+  "name": "3makkk/bedrock",
   "type": "project",
   "license": "MIT",
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
@@ -14,6 +14,11 @@
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Sven Friedemann",
+      "email": "sven@erstellbar.de",
+      "homepage": "https://erstellbar.de"
     }
   ],
   "keywords": [
