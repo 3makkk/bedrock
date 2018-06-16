@@ -15,18 +15,13 @@ Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](htt
 * Autoloader for mu-plugins (use regular plugins as mu-plugins)
 * Enhanced security (separated web root and secure passwords with [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
 
-Use [Trellis](https://github.com/roots/trellis) for additional features:
-
-* Easy development environments with [Vagrant](http://www.vagrantup.com/)
-* Easy server provisioning with [Ansible](http://www.ansible.com/) (Ubuntu 16.04, PHP 7.1, MariaDB)
-* One-command deploys
-
 See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
 
 ## Requirements
 
 * PHP >= 5.6
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* Docker
 
 ## Installation
 
@@ -34,7 +29,7 @@ See a complete working example in the [roots-example-project.com repo](https://g
 
   `composer create-project roots/bedrock your-project-folder-name`
 
-2. Update environment variables in `.env`  file:
+2. Update environment variables in `docker-compose.yml`  file:
   * `DB_NAME` - Database name
   * `DB_USER` - Database user
   * `DB_PASSWORD` - Database password
@@ -56,7 +51,9 @@ See a complete working example in the [roots-example-project.com repo](https://g
 
 4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
 
-5. Access WP admin at `http://example.com/wp/wp-admin`
+5. Run `docker-compose up` on project root
+
+5. Access WP admin at `http://localhost:8080/wp/wp-admin`
 
 
 Any other deployment method can be used as well with one requirement:
