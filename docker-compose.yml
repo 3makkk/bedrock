@@ -2,6 +2,12 @@ version: '2'
 services:
   server:
     build: .
+    volumes: 
+      - /var/www/html/vendor
+      - /var/www/html/web/wp
+      - /var/www/html/web/app/mu-plugins
+      - /var/www/html/web/app/plugins
+      - .:/var/www/html
     links:
       - db:mysql
     ports:
